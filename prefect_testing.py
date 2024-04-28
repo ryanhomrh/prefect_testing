@@ -5,7 +5,7 @@ from prefect import flow
 def trigger_dbt_flow() -> str:
     result = DbtCoreOperation(
         commands=["dbt run"],
-        project_dir="~/jaffle_shop",
+        project_dir="C:\Users\ryanh\jaffle_shop",
         profiles_dir="~/.dbt"
     ).run()
     return result
