@@ -6,7 +6,7 @@ def trigger_dbt_flow() -> str:
     result = DbtCoreOperation(
         commands=["dbt run"],
         project_dir="C:/Users/ryanh/jaffle_shop",
-        profiles_dir="~/.dbt"
+        profiles_dir="C:/Users/ryanh/.dbt/profiles"
     ).run()
     return result
 
